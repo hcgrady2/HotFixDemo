@@ -1,0 +1,3 @@
+com/study/hotfixdemo/MainActivity.class
+com/study/hotfixdemo/BaseActivity.class
+com/study/hotfixdemo/BaseApplication.class
