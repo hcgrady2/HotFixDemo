@@ -6,7 +6,7 @@ package com.study.mylibrary.utils;
  */
 
 public  class Constants {
-    public static final String DEX_NAME = "classes2.dex";
+    public static final String DEX_NAME = "fix_dex.jar";
     public static final String DEX_DIR = "odex";
-    public static final String DEX_SUFFIX = ".dex";
+    public static final String DEX_SUFFIX = ".jar";
 }

@@ -7,7 +7,14 @@
     tools:context="com.study.hotfixdemo.MainActivity"
     android:layout_gravity="center"
     android:gravity="center"
+    android:orientation="vertical"
     >
+
+    <Button
+        android:id="@+id/hotfix"
+        android:text="修复测试"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 
     <Button
         android:id="@+id/jump"

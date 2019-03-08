@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/HotFixDemo.iml" filepath="$PROJECT_DIR$/HotFixDemo.iml" />
+      <module fileurl="file://D:\Github\my\HotFixDemo-master\HotFixDemo.iml" filepath="D:\Github\my\HotFixDemo-master\HotFixDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HotFixDemo-master.iml" filepath="$PROJECT_DIR$/HotFixDemo-master.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/buildsrc/buildsrc.iml" filepath="$PROJECT_DIR$/buildsrc/buildsrc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gradleplugin/gradleplugin.iml" filepath="$PROJECT_DIR$/gradleplugin/gradleplugin.iml" />
       <module fileurl="file://$PROJECT_DIR$/mylibrary/mylibrary.iml" filepath="$PROJECT_DIR$/mylibrary/mylibrary.iml" />
     </modules>
   </component>

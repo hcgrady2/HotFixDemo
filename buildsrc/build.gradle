@@ -1,0 +1,63 @@
+apply plugin: 'groovy'
+
+dependencies {
+    compile gradleApi()//gradle sdk
+    compile localGroovy()//groovy sdk
+//    compile 'com.android.tools.build:gradle:2.1.0'
+  //  compile 'com.android.tools.build:gradle:3.0.1'
+
+    compile 'org.javassist:javassist:3.20.0-GA'
+    compile 'com.android.tools.build:gradle:3.1.2'
+
+
+}
+
+repositories {
+    maven{ url 'http://maven.aliyun.com/nexus/content/groups/public/'}
+    jcenter()
+}
+
+class Address{
+    String province=null
+    String city=null
+}
+class HCExtension{
+    String myName = null;
+}
+
+class TestExtensionPlugin implements Plugin<Project> {
+
+
+
+    @Override
+    void apply(Project project) {
+
+        //创建 hc 模块
+        project.extensions.create('hc', HCExtension);
+        project.extensions.create('address', Address);
+
+        //定义 task
+        project.task('readExtension') << {
+            def address=project['address']
+
+            println project['hc'].myName
+            println address.province+" "+address.city
+
+        }
+    }
+}
+
+
+apply plugin: TestExtensionPlugin
+//使用 hc 模块
+hc {
+    address{
+        province "Beijing"
+        city "Beijing"
+    }
+
+    myName "hcwang"
+
+}
+
+

@@ -1,5 +1,7 @@
 package com.study.mylibrary.utils;
 
+import android.util.Log;
+
 import java.lang.reflect.Array;
 
 /**
@@ -26,6 +28,8 @@ public class ArrayUtils {
                 Array.set(result,k,Array.get(arrayRhs,k-i));
             }
         }
+        Log.i("FixDemo", "合并数组完成" );
+
         return result;
     }
 }
